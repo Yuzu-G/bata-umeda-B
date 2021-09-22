@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>水害からの救出 │ Project N</title>
+  <title>L.L.R │ Project N</title>
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -23,7 +23,7 @@
   </header>
   <main class="main main-page">
     <!-- タイトルエリア　ここから -->
-    <h1 class="main-title"><img src="./assets/images/gesuidou_Ps.png" alt="水害からの脱出"></h1>
+    <h1 class="main-title"><img src="./assets/images/LLR.png" alt="Presented by SCRAP×N・S高リアル脱出ゲーム制作PJ L.L.R"></h1>
     <!-- タイトルエリア　ここまで -->
     <div id="stage">
 
@@ -38,7 +38,9 @@
             <p class="text-center">その頃、下水処理施設では原因の特定を進めていた。<br>
               今わかることは下水処理の管理機能が失われたということ。<br>
               なぜ管理機能が失われてしまったのだろうか。<br>
-              謎を解いて原因を突き止めよう。</p>
+              管理機能を取り戻そうとPCをつけるとこんな画面が表示された。<br>
+              どうやら謎解きのようだ。これを解いたら原因がわかるかもしれない。<br>
+            </p>
             <p class="text-center">困ったときは、ヒントがある。なるべく見ないようにゲームを進めていこう。</p>
   
             <div class="container">
@@ -72,7 +74,7 @@ Youtube貼り付けここまで -->
               []、()の間違い、''の抜けがあると動きません。
             ------------------------------------------------------------------------------------------------------------>
             <answer-input v-bind:correct="correctAnswer['stage1']['q1']" v-on:answer-input="answerInput($event, 'stage1', 1)"></answer-input>
-            <p class="text-center">英数字は半角入力のみ</p>
+            <p class="text-center">全角入力のみ</p>
 
             <a class="link-hint" href="hint1.html" target="hint1">ヒントをみる ></a>
           </div>
@@ -90,8 +92,8 @@ Youtube貼り付けここまで -->
             <div class="clear-message">
               <div class="clear-message__title">STAGE：１  クリア！</div>
               <div class="clear-message__content">
-                原因の特定ができた。どうやら、あるハッカーによるハッキングが原因らしい。。。<br>
-                次は管理機能を取り戻すんだ。急がなければ町が水浸しになってしまう。</div>
+                原因の特定ができた。どうやら、あるハッカーによるハックが原因らしい。。。<br>
+                次は管理機能を取り戻すんだ。下水が川に放流されてしまう。</div>
               <button v-on:click="nextStage('stage1')" onclick="location.href='#sectionStage2'" class="clear-message__btn btn">次のステージへ<svg class="btn__arrow"><use xlink:href="#arrow"></use></svg></button>
             </div>
           </div>
@@ -116,6 +118,8 @@ Youtube貼り付けここまで -->
                 謎を解いてどこの管理機能がハッキングされたのか突き止めよう。</p>
                 <figure class="img_Q">
                   <img src="./assets/images/Q2.png" alt="問2">
+                  <img src="./assets/images/hint-tokyo.jpeg" alt="hint-tokyo">
+
                 </figure>
             </div>
           </div>
@@ -227,6 +231,7 @@ Youtube貼り付けここまで -->
             ------------------------------------------------------------------------------------------------------------------>
             <answer-input v-bind:correct="correctAnswer['stage3']['q1']" v-on:answer-input="answerInput($event, 'stage3', 1, 'final')"></answer-input>
             <p class="text-center">英数字は半角入力のみ</p>
+            <a class="link-hint" href="hint3.html" target="hint2">ヒントをみる ></a>
           </div>
         </section>
         <!-- STAGE3-1解答入力セクション　ここまで -->
